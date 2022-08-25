@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Test task</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<section class="wrapper">
+  <div class="content">
+    <header>
+      <h1>Your info</h1>
+    </header>
+    <section>
+      <p>
+        Test task
+      </p>
+    </section>
+    <footer>
+      <form id = 'test_task_form'>
+        <div>Your IP</div>
+        <input class = "ip" type="text" readonly>
+        <div>Your City</div>
+        <input class = "city" type="text" readonly>
+        <div>Filter (Press Enter to confirm) </div>
+        <input class = "filter" type="text" onkeydown= "return /\p{L}/u.test(event.key)">
+    </form>
+    <div>Suggestions</div>
+    <select name="Suggestions" id="suggestions"></select>
+    </footer>
+  </div>
+</section>
+<!-- partial -->
+<script src="js/main.js"></script>
+</body>
+</html>
